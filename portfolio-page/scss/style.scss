@@ -1,0 +1,106 @@
+$pink: #ec407a;
+$indigo: #e8eaf6;
+
+html {
+  background-color: $indigo;
+}
+
+.navbar-fixed {
+  nav {
+  background-color: $pink;
+  ul a {
+    color: white;
+    &:hover {
+      color: white;
+      background-color: inherit;
+      font-weight: bold;
+    }
+  }
+}
+}
+
+#about {
+  .container {
+    @media (min-width: 992px) {
+      margin-top: 1.5em;
+    }
+    @media (min-width:601px) {
+      margin-top: 4.5em;
+    }
+    .about-text {
+      margin-top: 1em;
+    }
+    h4 {
+      font-size: 2em;
+      i {
+        font-size: .7em;
+        padding-right: .4em;
+      }
+    }
+    .first {
+      margin-bottom: -.2em;
+    }
+    .about-description {
+      .first {
+        margin-top: 2em;
+      }
+      i {
+        padding-right: 1em;
+      }
+    }
+  }
+}
+
+#portfolio {
+  background-color: white;
+  padding-bottom: 1em;
+  .title {
+    padding-top: 1em;
+    text-align: center;
+  }
+  .portfolio-content {
+    div {
+      a {
+        color: $pink;
+      }
+      text-align: center;
+      h5 {
+        margin-bottom: -.5em;
+      }
+      &.fatpitch .image {
+        height: 256px;
+        overflow: hidden;
+        img {
+          max-width: 100%;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+#contact {
+  input:focus, textarea:focus {
+    border-bottom-color: $pink;
+    box-shadow: 0 1px 0 0 $pink;
+    &+label {
+      color: $pink;
+    }
+  }
+  .submit {
+    text-align: center;
+    button {
+      background-color: $pink;
+      position: relative;
+      top:4em;
+
+    }
+  }
+}
+
+footer.page-footer {
+  background-color: $pink;
+  .footer-copyright {
+    background-color: $pink;
+  }
+}

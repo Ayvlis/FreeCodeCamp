@@ -1,0 +1,52 @@
+.main {
+  padding: 1em;
+  font-size: 1vw;
+}
+
+h2 {
+  margin-bottom: 1.5em;
+}
+
+.cite {
+  font-size: 1.2em;
+  padding: .4em
+}
+
+.lit {
+  border-radius: 100%;
+}
+
+.timeline {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.more {
+  margin-top: 1.5em;
+}
+
+span, .anchor {
+  font-size: 1.4em;
+	color:#FFD700
+}
+
+.link {
+  display: inline;
+}
+
+a:hover, a:focus {
+  color: #FFD700;
+}
+
+.credits {
+  margin-top: 3em;
+  text-align: right;
+	background-color: black;
+	maregin-bottom: 0;
+	color: white;
+	padding: 1em;
+}
