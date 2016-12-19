@@ -77,9 +77,6 @@ html {
 #contact input:focus + label, #contact textarea:focus + label {
   color: #ec407a;
 }
-#contact .submit {
-  text-align: center;
-}
 #contact .submit button {
   background-color: #ec407a;
   position: relative;
