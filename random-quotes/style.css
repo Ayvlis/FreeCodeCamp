@@ -1,0 +1,21 @@
+.footer {
+  margin-top: 10vw;
+}
+.footer a {
+  color:#FF8B20;
+
+}
+.footer a:hover {
+  color: #ffb886;
+}
+
+.card-action {
+   line-height: 1.5em;
+}
+.tweet {
+  font-size: 1.5em;
+}
+
+.card {
+  margin-top: 10vw;
+}
