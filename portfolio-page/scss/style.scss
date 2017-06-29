@@ -1,22 +1,13 @@
 $pink: #ec407a;
 $indigo: #e8eaf6;
-
 html {
   background-color: $indigo;
 }
 
 .navbar-fixed {
   nav {
-  background-color: $pink;
-  ul a {
-    color: white;
-    &:hover {
-      color: white;
-      background-color: inherit;
-      font-weight: bold;
-    }
+    background-color: $pink;
   }
-}
 }
 
 #about {
@@ -24,7 +15,7 @@ html {
     @media (min-width: 992px) {
       margin-top: 1.5em;
     }
-    @media (min-width:601px) {
+    @media (max-width: 992px) {
       margin-top: 4.5em;
     }
     .about-text {
@@ -48,6 +39,19 @@ html {
         padding-right: 1em;
       }
     }
+
+    .social {
+      margin-top: 3em;
+      a {
+        margin-right: 1em;
+      }
+      i {
+        color: #000;
+        &:hover {
+          color: $pink;
+        }
+      }
+    }
   }
 }
 
@@ -58,7 +62,7 @@ html {
     padding-top: 1em;
     text-align: center;
   }
-  .portfolio-content {
+  .portfolio {
     div {
       a {
         color: $pink;
@@ -80,19 +84,25 @@ html {
 }
 
 #contact {
+   @media (max-width: 992px) {
+      height: 35em;
+    }
+  
   input:focus, textarea:focus {
     border-bottom-color: $pink;
     box-shadow: 0 1px 0 0 $pink;
-    &+label {
+    & + label {
       color: $pink;
     }
   }
   .submit {
+    text-align: center;
     button {
       background-color: $pink;
       position: relative;
-      top:4em;
-
+      top: 4em;
+      right: -2em;
+      width: 15em;
     }
   }
 }
@@ -103,3 +113,4 @@ footer.page-footer {
     background-color: $pink;
   }
 }
+

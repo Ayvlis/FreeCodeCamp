@@ -1,8 +1,7 @@
 $(document).ready(function(){
-    $('.scrollspy').scrollSpy({scrollOffset: 250});
+    $('.scrollspy').scrollSpy();
   });
 
-/*animate section change
 $('a').click(function(e) {
   parent=e.target.parentElement;
   $('body').animate({
@@ -12,4 +11,13 @@ $('a').click(function(e) {
         $(parent).addClass("active");
       });
 });
-*/
+
+
+function sendMail() {
+    var link = "mailto:floriosg@gmail.com"
+             + "?subject=" +$("#name").val() + escape(" from Codepen")
+             + "&body=" + escape($('#myText').val())
+    ;
+
+    window.location.href = link;
+}

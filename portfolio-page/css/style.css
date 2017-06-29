@@ -5,21 +5,13 @@ html {
 .navbar-fixed nav {
   background-color: #ec407a;
 }
-.navbar-fixed nav ul a {
-  color: white;
-}
-.navbar-fixed nav ul a:hover {
-  color: white;
-  background-color: inherit;
-  font-weight: bold;
-}
 
 @media (min-width: 992px) {
   #about .container {
     margin-top: 1.5em;
   }
 }
-@media (min-width: 601px) {
+@media (max-width: 992px) {
   #about .container {
     margin-top: 4.5em;
   }
@@ -43,6 +35,18 @@ html {
 #about .container .about-description i {
   padding-right: 1em;
 }
+#about .container .social {
+  margin-top: 3em;
+}
+#about .container .social a {
+  margin-right: 1em;
+}
+#about .container .social i {
+  color: #000;
+}
+#about .container .social i:hover {
+  color: #ec407a;
+}
 
 #portfolio {
   background-color: white;
@@ -52,24 +56,29 @@ html {
   padding-top: 1em;
   text-align: center;
 }
-#portfolio .portfolio-content div {
+#portfolio .portfolio div {
   text-align: center;
 }
-#portfolio .portfolio-content div a {
+#portfolio .portfolio div a {
   color: #ec407a;
 }
-#portfolio .portfolio-content div h5 {
+#portfolio .portfolio div h5 {
   margin-bottom: -.5em;
 }
-#portfolio .portfolio-content div.fatpitch .image {
+#portfolio .portfolio div.fatpitch .image {
   height: 256px;
   overflow: hidden;
 }
-#portfolio .portfolio-content div.fatpitch .image img {
+#portfolio .portfolio div.fatpitch .image img {
   max-width: 100%;
   overflow: hidden;
 }
 
+@media (max-width: 992px) {
+  #contact {
+    height: 35em;
+  }
+}
 #contact input:focus, #contact textarea:focus {
   border-bottom-color: #ec407a;
   box-shadow: 0 1px 0 0 #ec407a;
@@ -77,10 +86,15 @@ html {
 #contact input:focus + label, #contact textarea:focus + label {
   color: #ec407a;
 }
+#contact .submit {
+  text-align: center;
+}
 #contact .submit button {
   background-color: #ec407a;
   position: relative;
   top: 4em;
+  right: -2em;
+  width: 15em;
 }
 
 footer.page-footer {
@@ -89,3 +103,4 @@ footer.page-footer {
 footer.page-footer .footer-copyright {
   background-color: #ec407a;
 }
+
